@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Automated Research Tools, LLC</title>
+  <!-- Link to your CSS (You said you'll attach later) -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Progress bar (if used in features.js) -->
+  <div id="progress-bar"></div>
+
+  <!-- ======================= HEADER & NAV ======================= -->
+  <header>
+    <nav>
+      <img src="images/ART.svg" alt="ART Logo" class="navbar-logo" />
+      <ul class="nav-list">
+        <!-- Showcase link removed -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#mission">Our Mission</a></li>
+        <li><a href="#founder">Meet the Founder</a></li>
+        <!-- Added a link to Consultation so it's easily accessible -->
+        <li><a href="#consultation">Consultation</a></li>
+        <!-- Contact now points to the footer, which is given an ID below -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div
+      class="hero"
+      style="
+        background-image: url('images/background.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <h1>Automated Research Tools, LLC</h1>
+      <p>Advancing Research Through Smart Tooling, Automation, and Data Collection Solutions</p>
+    </div>
+  </header>
+
+  <!-- ======================= MAIN CONTENT ======================= -->
+  <main>
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>Have you ever tried to measure something that seemed unmeasurable? At Automated Research Tools, LLC, we design experiments and develop custom tools to help you uncover answers and move forward with confidence. Whether you need data in extreme conditions, are gathering benchmarks for a project, or want to automate a repetitive research task, we’re here to help. Your work inspires us—and we’re proud to support breakthrough research, one solution at a time.
+      </p>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services" class="section">
+      <h2>Standard Services </h2>
+      <div class="services-list">
+        <div class="service card">
+          <img
+            src="images/drone sensor.jpg"
+            alt="Customized sensor kit"
+            class="card-image"
+          />
+          <h3>Customized Small-Scale Sensor Kits</h3>
+          <p>
+           We build custom, plug-and-play sensor kits that make it easy to collect and monitor data for research projects. Whether you're tracking renewable energy output, environmental conditions, or equipment performance, our kits deliver real-time insights with minimal setup. Designed for scientists, engineers, and research professionals, each kit is tailored to your needs—providing reliable, low-friction data collection so you can focus on what matters.
+          </p>
+          <!--<a href="designservice.html" class="see-more">Make a Request</a>-->
+        </div>
+        <div class="service card">
+            <img
+              src="images/robotics.jpg"
+              alt="Customized sensor kit"
+              class="card-image"
+            />
+            <h3>Robotic Attachments</h3>
+            <p>
+            Boost your research capabilities with custom robotic attachments designed to enhance and automate complex experimental workflows. From motorized mounts to precision-actuated components, our designs integrate with your existing lab or field equipment—eliminating the need for full robotic systems. As design consultants, we provide plug-and-play tools to make your experiments faster and more consistent, without overhauling your setup. All solutions are intended for research and prototyping use.
+            </p>
+            <!--<a href="designservice.html" class="see-more">Make a Request</a>-->
+          </div>
+      </div>
+    </section>
+
+    <!-- ========== SHOWCASE SECTION (HIDDEN) ========== -->
+    <!--
+    <section id="showcase" class="section">
+      <h2>Showcase</h2>
+      <div class="slideshow-container">
+        <div class="slide">
+          <iframe
+            width="850"
+            height="500"
+            src="https://www.youtube.com/embed/7DXEcfLi50Q?si=zqu1KkXSpejvdZ2c"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p class="file-description">Project Overview Video</p>
+        </div>
+        <div class="slide">
+          <img
+            src="images/project1.jpg"
+            alt="Project Image 1"
+            class="showcase-image"
+          />
+          <p class="file-description">Sensor Kit Design</p>
+        </div>
+        <div class="slide">
+          <img
+            src="images/project2.jpg"
+            alt="Project Image 2"
+            class="showcase-image"
+          />
+          <p class="file-description">3D Model of Drone Attachment</p>
+        </div>
+        <div class="slide">
+          <img
+            src="images/pdf-icon.png"
+            alt="PDF Icon"
+            class="showcase-file-icon"
+          />
+          <p class="file-description">
+            <a href="files/specifications.pdf" download>
+              Download Specifications (PDF)
+            </a>
+          </p>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <div class="project-title">
+        <h3>Current Project: Advanced Sensor Kit</h3>
+      </div>
+    </section>
+    -->
+
+    <!-- ========== MARKETPLACE SECTION (STILL COMMENTED OUT) ========== -->
+    <!--
+    <section id="marketplace" class="section">
+      <h2>Marketplace</h2>
+      <p>
+        We offer a virtual marketplace for researchers and innovators looking to
+        streamline data collection and analysis...
+      </p>
+      <div class="marketplace-grid">
+        ... (content)
+      </div>
+    </section>
+    -->
+
+    <!-- ========== OUR MISSION SECTION ========== -->
+    <section id="mission" class="section">
+      <h2>Our Mission</h2>
+      <div class="mentality-content">
+        <img
+          src="images/motivation.jpg"
+          alt="Mission or motivational image"
+          class="mentality-image"
+        />
+        <p class="mentality-text">
+          At Automated Research Tools, LLC, our mission is to empower researchers and innovators with accessible, automated tools for data collection and process improvement. We aim to simplify complex measurement tasks, reduce manual effort, and accelerate discovery. By developing reliable, user-friendly solutions, we help bridge the gap between cutting-edge technology and practical research needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== FOUNDER SECTION ========== -->
+    <section id="founder" class="section">
+      <h2>Meet the Founder</h2>
+      <div class="founder-content">
+        <img
+          src="images/ian_headshot.webp"
+          alt="Founder Ian Seremet"
+          class="founder-image"
+        />
+        <p>
+          Our founder, Ian Seremet, is a Mechanical Engineering senior at the University of Minnesota with a passion for design and robotics. Automated Research Tools, LLC was born at the intersection of these interests—combining creative problem-solving with practical automation to help research teams develop smarter, more efficient tools for their work.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== CONSULTATION SECTION ========== -->
+    <section id="consultation" class="section">
+      <h2>Schedule a Consultation</h2>
+      <p>
+        Book a free consultation to talk about your research needs, challenges, or experimental ideas. We’re happy to explore how we might help. Use the calendar below to schedule a time.
+      </p>
+      <iframe
+        src="https://calendar.app.google/AwCDQnnkA89FE2pY7"
+        style="border: 0; width: 100%; height: 820px;"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER (WITH CONTACT ID) ======================= -->
+  <footer id="contact" class="footer-contact">
+    <p class="contact-description">
+      <i>Automated Research Tools, LLC provides design consulting services for research and prototyping purposes only. We do not offer licensed professional engineering (PE) services. Our solutions are not intended for regulatory submission, final product certification, or applications where public safety is involved without further review by a licensed engineer.</i>
+    </p>
+    <div class="contact-info">
+      <a href="mailto:automatedresearchtools@gmail.com" class="contact-item">
+        <img src="images/emailicon.png" alt="Email Icon" class="contact-icon" />
+        automatedresearchtools@gmail.com
+      </a>
+      <a href="tel:+5073163284" class="contact-item">
+        <img src="images/phone_icon.png" alt="Phone Icon" class="contact-icon" />
+        (507)316-3284
+      </a>
+    </div>
+    <p class="copyright">
+      &copy; 2025 Automated Research Tools, LLC. All rights reserved.
+    </p>
+  </footer>
+  
+
+  <!-- ======================= SCRIPTS ======================= -->
+  <script src="features.js"></script>
+</body>
+</html>

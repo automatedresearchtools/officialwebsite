@@ -1,0 +1,526 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Progress Bar */
+#progress-bar {
+    width: 0;
+    height: 5px;
+    background: #007bff;
+    transition: width 0.3s ease;
+}
+
+/* Checklist Dropdown */
+.details {
+    margin-top: 10px;
+    padding-left: 20px;
+    display: none;
+    list-style-type: disc;
+}
+.details.hidden {
+    display: none;
+}
+
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.navbar-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    color: #000000;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+/* Underline effect on hover */
+.nav-list a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width 0.3s ease;
+}
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+header .hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: #ffffff;
+    background-image: url('project-showcase.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for better contrast */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+    background-blend-mode: darken; /* Ensures text is visible against light areas */
+}
+header h1 {
+    font-size: 3.5rem; /* Larger title for prominence */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2rem;
+    margin-top: -10px; /* Move text upward */
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Buttons */
+button, .button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: #333333;
+}
+
+.card .see-more {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.card .see-more:hover {
+    background-color: #333333;
+}
+
+
+/* General Section Styling */
+.section {
+    padding: 100px 20px; /* Adds consistent spacing around sections */
+    max-width: 1200px; /* Limits the section width for better readability */
+    margin: 0 auto; /* Centers the section content */
+    text-align: center; /* Aligns text to the center */
+}
+
+.section h2 {
+    font-size: 2rem; /* Section heading size */
+    font-weight: 600; /* Bold text for headings */
+    margin-bottom: 20px; /* Adds space below headings */
+    color: #333333; /* Darker color for better contrast */
+}
+
+.section p {
+    font-size: 1rem; /* Standard paragraph size */
+    font-weight: 300; /* Lighter font for readability */
+    margin-bottom: 40px; /* Space below paragraphs */
+    line-height: 1.6; /* Improves text readability */
+    color: #555555; /* Muted color for secondary text */
+}
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px; /* Increased max width */
+    margin: 0 auto;
+    overflow: hidden;
+    height: 600px;
+}
+
+/* Slide Media */
+.showcase-video, .showcase-image, .showcase-file-icon {
+    width: 100%;
+    max-height: 600px; /* Increased height */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* File Description */
+.file-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Dots */
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Project Title Section */
+.project-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-title h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+
+/*Mentality Section */
+.mentality-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Adds even spacing between image and text */
+    gap: 80px; /* Space between the image and text */
+    max-width: 1200px; /* Limit the overall width of the section */
+    margin: 0 auto; /* Center the content */
+    padding: 40px 20px; /* Add padding on the sides */
+}
+
+.mentality-image {
+    max-width: 650px; /* Maintain a large but proportional size for the image */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mentality-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify; /* Align text evenly across lines for better readability */
+    max-width: 600px; /* Keep the text width balanced with the image */
+}
+
+/* Services Section */
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.services-list img {
+    width: 100%; /* Make the image fill its container's width */
+    height: 500px; /* Enforce consistent height */
+    object-fit: cover; /* Crop images to maintain the container's aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners for uniform styling */
+}
+
+.card {
+    max-width: 1000px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.card .dropdown-content {
+    display: none;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Checklist Styling */
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content li {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content label {
+    margin-left: 8px;
+    font-size: 1rem;
+}
+
+/* Total Cost Styling */
+#total-cost {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Client Information Form Styling */
+#client-info-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#client-info-form h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#client-info-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+#client-info-form input,
+#client-info-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#client-info-form textarea {
+    resize: none;
+}
+
+#client-info-form button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#client-info-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Smooth Scroll for Form and Consultation */
+html {
+    scroll-behavior: smooth;
+}
+.button {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for consistent size */
+    font-size: 1rem; /* Standard font size */
+    text-transform: capitalize; /* Capitalized text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    font-family: 'Inter', sans-serif; /* Match website font */
+}
+
+.button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+.card .see-more {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.card .see-more:hover {
+    background-color: #333333;
+}
+
+.founder-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px; /* Increase spacing between image and text */
+    text-align: left;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.founder-image {
+    max-width: 200px; /* Smaller size */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1; /* Ensure it does not overlap other content */
+}
+/* ======================= CONTACT FOOTER ======================= */
+.footer-contact {
+    background-color: #000000;    /* Dark background */
+    color: #ffffff;              /* White text */
+    text-align: center;
+    padding: 40px 20px;          /* Extra padding for a more spacious look */
+  }
+  
+  .footer-contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #cccccc;              /* Slightly lighter text for contrast */
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;                   /* Spacing between contact items */
+    flex-wrap: wrap;             /* Wrap on smaller screens */
+    margin-bottom: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    color: #ffffff;              /* White text for links */
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    color: #cccccc;              /* Subtle hover effect */
+  }
+  
+  .contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  
+
